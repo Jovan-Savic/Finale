@@ -5,6 +5,7 @@ addButton.addEventListener("click", GetInputa);
 async function GetInputa()
 {
     const ime = document.querySelector(".ime");
+    ime=ime.Value;
 //let ime=document.getElementById("ime");
 console.log(ime);
 }
