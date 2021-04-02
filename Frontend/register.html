@@ -32,12 +32,12 @@
 <body>
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="index.html">Human<span>.</span></a></h1>
+      <h1 class="logo me-auto"><a href="home.html">Human<span>.</span></a></h1>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="home.html">Home</a></li>
-          <li><a class="nav-link scrollto " href="portfolio-detailj.html">O nama</a></li>
+          <li><a class="nav-link scrollto " href="onama.html.html">O nama</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a class="nav-link scrollto" href="login.html">Log in</a></li>
         </ul>
@@ -59,7 +59,7 @@
           <li><a class="nav-link scrollto " href="home.html">Home</a></li>
           <li><a class="nav-link scrollto" href="login.html">Log in</a></li>
 
-          <li><a class="nav-link scrollto " href="portfolio-detailj.html">O nama</a></li>
+          <li><a class="nav-link scrollto " href="onama.html">O nama</a></li>
 
           <li><a href="blog.html">Blog</a></li>
 
@@ -76,38 +76,76 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Inner Page</li>
+          <li><a href="index.html">Pocetna</a></li>
+          <li>Registruj se</li>
         </ol>
-        <h2>Inner Page</h2>
+        <h2>Registruj se</h2>
 
       </div>
     </section>
 
-    <section class="inner-page">
-      <div class="container" data-aos="fade-up"
-        style="margin: auto; text-align: center;  background-image: url('av.jpg'); ">
-        <label for="ime">Ime:</label><br>
-        <input type="text" id="ime" name="ime" placeholder="Ime"><br><br>
-        <label for="prezime">Prezime:</label><br>
-        <input type="text" id="prezime" name="prezime" placeholder="Prezime"><br><br>
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email" placeholder="Email"><br><br>
-        <label for="brtel">Broj telefona:</label><br>
-        <input type="number" id="brtel" name="brtel" placeholder="Broj telefona"><br><br>
-        <label for="sifra">Sifra:</label><br>
-        <input type="password" id="sifra" name="sifra" placeholder="Sifra"><br><br>
-        <label for="sifra2">Potvrdite sifru:</label><br>
-        <input type="password" id="sifra2" name="sifra2" placeholder="Potvrdite sifru"><br><br>
-        <button type="Register" class="myButton" style="text-align: center;">Registruj se</button>
-      </div>
-    </section>
+    <div class="container">
+    <h1>Registracija</h1>
+    <p>Molimo vas popunite formu da biste se registrovali.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Ponovite Password</b></label>
+    <input type="password" placeholder="Ponovite Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <p>Pravljenjem naloga obavezujete se na <a href="terms.txt">Uslove Koriscenja</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Vec si napravio nalog?<a href="login.html">Uloguj se</a>.</p>
+  </div>
 
   </main>
 
 
   <footer id="footer">
 
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3><span>Kontakt</span></h3>
+            <p>
+              Humanih ljudi 6 <br>
+              Beograd, 11000<br>
+              Srbija <br><br>
+              <strong>Telefon:</strong> +381 61 139 0856<br>
+              <strong>Email:</strong> jovanzsavic@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Korisne stranice</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="home.html">Pocetna</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="onama.html">Doniraj</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="blog.html">O nama</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="terms.txt">Terms of service</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Ako nije rano, pozajmite negdje u komšiluku kavu, šećer i neku cigaretu. Sjedite, smirite se i razmislite - kod koga biste danas mogli ručati. Ako vam djeca kažu da su gladna, recite im da bi bilo bolje da uče. Ispričajte im ponovo kako ste se vi mučili dok niste stigli dotle da pozajmljujete tek 28. u mjesecu.
+            </h4>
+           <p>Dusko Radovic</p>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Svijet je opasno mjesto za život, ne zbog ljudi koji su zli, već zbog dobrih ljudi koji ništa ne poduzimaju.</h4>
+           <p>Albert Ajnstajn</p>
+          </div>
 
 
     <div class="container d-md-flex py-4">
