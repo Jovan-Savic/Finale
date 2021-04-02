@@ -12,10 +12,12 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
- 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -24,19 +26,19 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  
+
   <link href="assets/css/style.css" rel="stylesheet">
 
 
 </head>
 
-<body style="background-color:rgb(186, 186, 186);">
+<body>
 
-  
+
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
       <h1 class="logo me-auto"><a href="home.html">Human<span>.</span></a></h1>
-      
+
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto " href="home.html">Home</a></li>
@@ -53,86 +55,42 @@
 
   <main id="main">
 
-    
+
     <section class="breadcrumbs">
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Inner Page</li>
+          <li><a href="index.html">Pocetna</a></li>
+          <li>Login</li>
         </ol>
-        <h2>Inner Page</h2>
+        <h2>Login</h2>
 
       </div>
     </section>
 
-    <section class="inner-page">
+    
 
-      <div class="container" data-aos="fade-up">
-        <p>
-          <div class="container" >
-            <div class="row">
-          <div class="col-md-5 mx-auto">
-          <div id="first">
-            <div class="myform form ">
-               <div class="logo mb-3">
-                 <div class="col-md-12 text-center"style="background-color:rgb(255, 255, 255);"  width: 700px;>  <h1>Log in</h1>
-                  <label for="email">Email:</label><br>
-                  <input type="text" id="email1" name="email" placeholder="Email"><br><br>
-                  <label for="sifra">Sifra:</label><br>
-                  <input type="password" id="sifra1" name="sifra" placeholder="Sifra"><br><br>
-                
-                  <br>
-                  By signing up you accept our <a href="terms.txt">Terms Of Use</a>
-                  <br>
-                  <div class="col-md-12 ">
-                  <div {
-                    position: relative;
-                    color: #aaa;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    }>
-                  <hr {
-                    display: block;
-                    position: absolute;
-                    left: 50%;
-                    top: -2px;
-                    margin-left: -25px;
-                    background-color: #fff;
-                    width: 50px;
-                    text-align: center;
-                    }>
-                    <span  {
-                      height: 1px;
-                      margin-top: 0px !important;
-                      margin-bottom: 0px !important;
-                      }></span><br>
-                      <button type="login" class="myButton" style="text-align: center;">Uloguj se</button><br>
-                      </div></div>
-                  Nemate nalog ? <a href="register.html"> Prijavite se ovde!</a>
-            </div> </div> </div> </div> </div> </div> </div>
-        </p>
+      <div class="container">
+        <h1>Ulogujte se</h1>
+        <p>Molimo vas popunite formu da biste se ulgovali.</p>
+        <hr>
+  
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <hr>
+        <button type="submit" class="registerbtn">Uloguj se</button>
       </div>
 
-      <!--<div class="container" data-aos="fade-up" style="margin: auto; text-align: center;  background-image: url('av.jpg'); ">
 
-      <label for="email">Email:</label><br>
-      <input type="text" id="email1" name="email" placeholder="Email"><br><br>
-      <label for="sifra">Sifra:</label><br>
-      <input type="password" id="sifra1" name="sifra" placeholder="Sifra"><br><br>
-
-      <button type="login" class="myButton" style="text-align: center;">Uloguj se</button>
-    </div>-->
-
-    </section>
 
   </main>
 
 
   <!-- ======= Footer ======= -->
- <!-- <footer id="footer">
+  <!-- <footer id="footer">
 =======
   <footer id="footer">
 
@@ -197,11 +155,12 @@
     </div>-->
   </footer><!-- End Footer -->
 
-    </div>
+  </div>
   </footer>
 
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
