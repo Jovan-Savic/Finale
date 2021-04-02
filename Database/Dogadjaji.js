@@ -1,16 +1,6 @@
 const mongoose = require("mongoose");
 
-const KorisnikSchema = new mongoose.Schema(
-    {
-        idkorisnika: 
-        {
-            type: String,
-            trim: true,
-           // required: true
-        },
-    });
-
-const EventSchema = new mongoose.Schema(
+const DogadjajSchema = new mongoose.Schema(
     {
         ime: 
         {
@@ -21,27 +11,27 @@ const EventSchema = new mongoose.Schema(
         organizator:
         {
             type: String,
-           // required: true
+            required: true
         },
         kontakt: 
         {
             type: String,
-           // required: true
+            required: true
         },
         datum: 
         {
             type: Date,
-           // required: true
+            required: true
         },
         lokacija:
         {
             type: String,
-           // required: true
+            required: true
         },
         info:
         {
             type: String,
-           // required: true
+            required: true
         },
         ucesnici: 
         {
@@ -50,4 +40,4 @@ const EventSchema = new mongoose.Schema(
 
     });
 
-module.exports = mongoose.model("Sport", EventSchema);
+module.exports = mongoose.model("Sport", DogadjajiSchema);

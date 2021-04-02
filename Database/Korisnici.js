@@ -6,30 +6,30 @@ const KorisnikSchema = new mongoose.Schema(
         {
             type: String,
             trim: true,
-           // required: true
+            required: true,
         },
         prezime: 
         {
             type: String,
             trim: true,
-            //required: true
+            required: true,
         },
         mail: 
         {
             type: String,
             trim: true,
-            //required: true
+            required: true,
         },
         password: 
         {
             type: String,
             trim: true,
-          //  required: true
+            required: true,
         },
         organizator: 
         {
             type: Boolean,
-           // required: true
+            required: true,
         },
 
     });
