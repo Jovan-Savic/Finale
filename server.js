@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
 const ConnectDatabase = require("./Database/Database");
-const Stari     =       require("./Database/Stari");
-const Vozac     =       require("./Database/Vozac");
-const Pomoc     =       require("./Database/Pomoc");
+const Stari           = require("./Database/Stari");
+const Vozac           = require("./Database/Vozac");
+const Mesta           = require("./Database/Pomoc");
 
 const PORT = 3001;
 
@@ -51,10 +51,10 @@ app.get("/use/vozac", async (req, res) =>
         });
     }
 })
-app.get("/use/pomoc", async (req, res) => 
+app.get("/use/mesta", async (req, res) => 
 {
     try{
-        const CelaTabela = await Pomoc.find();
+        const CelaTabela = await Mesta.find();
         res.json({
             uspesno: true,
             poruka: CelaTabela,
@@ -117,15 +117,12 @@ app.post("/use/vozac", async (req, res) =>
 
     }
 })
-app.post("/use/pomoc", async (req, res) => 
+app.post("/use/mesta", async (req, res) => 
 {
     try{
-        const noviPomoc = new Pomoc({
-            informacije:   req.body.informacije,
-            adresa:        req.body.adresa,
-            broj_telefona: req.body.broj_telefona,
-            ime:           req.body.ime,
-            broj_ljudi:    req.body.broj_ljudi,
+        const noviMesta = new Mesta({
+            opstina:  req.body.opstina,
+            idvozaca: req.body.idvozaca,
         });
 
         const provera = await noviPomoc.save();
