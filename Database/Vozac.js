@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const KorisnikSchema = new mongoose.Schema(
+const VozacSchema = new mongoose.Schema(
     {
         ime: 
         {
@@ -26,10 +26,15 @@ const KorisnikSchema = new mongoose.Schema(
             trim: true,
             required: true,
         },
-        organizator: 
+        broj_telefona:
+        {
+            type: String,
+            trim: true,
+            required: true,
+        },
+        dostupan:
         {
             type: Boolean,
-            required: true,
         },
         odobren:
         {
@@ -37,4 +42,4 @@ const KorisnikSchema = new mongoose.Schema(
         },
     });
 
-module.exports = mongoose.model("Korisnici", KorisnikSchema);
+module.exports = mongoose.model("Vozac", VozacSchema);
