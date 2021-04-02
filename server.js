@@ -1,15 +1,15 @@
 const express = require("express");
 const app = express();
 const ConnectDatabase = require("./Database/Database");
-const Sport = require("./Database/Sport");
-const Korisnici = require("./Database/Korisnici");
+const Dogadjaji =       require("./Database/Dogadjaji");
+const Korisnici =       require("./Database/Korisnici");
+const Pomoc     =       require("./Database/Pomoc");
 
 const PORT = 3001;
 
 
 app.listen(PORT, () =>{
 console.log("pocelo");
-
 });
 
 ConnectDatabase();
@@ -19,13 +19,13 @@ app.use(express.json());
 
 app.use(express.static("FrontEnd"));
 
-app.get("/api/eventi", async (req, res) => 
+app.get("/use/dogadjaji", async (req, res) => 
 {
     try{
-        const CelaBaza = await Sport.find();
+        const CelaTabela = await Dogadjaji.find();
         res.json({
             uspesno: true,
-            poruka: CelaBaza,
+            poruka: CelaTabela,
         });
 
     }catch(err){
@@ -33,16 +33,15 @@ app.get("/api/eventi", async (req, res) =>
             uspesno: false,
             poruka: err.message 
         });
-
     }
 })
-app.get("/api/korisnici", async (req, res) => 
+app.get("/use/korisnici", async (req, res) => 
 {
     try{
-        const CelaBaza = await Korisnici.find();
+        const CelaTabela = await Korisnici.find();
         res.json({
             uspesno: true,
-            poruka: CelaBaza,
+            poruka: CelaTabela,
         });
 
     }catch(err){
@@ -50,23 +49,37 @@ app.get("/api/korisnici", async (req, res) =>
             uspesno: false,
             poruka: err.message 
         });
-
     }
 })
-app.post("/api/eventi", async (req, res) => 
+app.get("/use/pomoc", async (req, res) => 
 {
     try{
-        const noviEvent = new Sport({
+        const CelaTabela = await Pomoc.find();
+        res.json({
+            uspesno: true,
+            poruka: CelaTabela,
+        });
+
+    }catch(err){
+        res.json({
+            uspesno: false,
+            poruka: err.message 
+        });
+    }
+})
+app.post("/use/dogadjaji", async (req, res) => 
+{
+    try{
+        const noviDogadjaj = new Dogadjaji({
             ime:         req.body.ime,
             organizator: req.body.organizator,
             kontakt:     req.body.kontakt,
             datum:       req.body.datum,
             lokacija:    req.body.lokacija,
             info:        req.body.info,
-            slika:       req.body.slika,
         });
 
-        const provera = await noviEvent.save();
+        const provera = await noviDogadjaj.save();
         res.json({
             uspesno: true,
             baza: provera,
@@ -77,10 +90,9 @@ app.post("/api/eventi", async (req, res) =>
             uspesno: false,
             poruka: err.message 
         });
-
     }
 })
-app.post("/api/korisnici", async (req, res) => 
+app.post("/use/korisnici", async (req, res) => 
 {
     try{
         const noviKorisnik = new Korisnici({
@@ -89,6 +101,7 @@ app.post("/api/korisnici", async (req, res) =>
             mail:        req.body.mail,
             password:    req.body.password,
             organizator: req.body.organizator,
+            odobren:     req.body.odobren,
         });
 
         const provera = await noviKorisnik.save();
@@ -105,21 +118,18 @@ app.post("/api/korisnici", async (req, res) =>
 
     }
 })
-app.post("/api/korisnikuevent", async (req, res) => 
+app.post("/use/pomoc", async (req, res) => 
 {
     try{
-        const IdEventa =  req.body.IdEventa;
-         
-        const Event = await Sport.findById(IdEventa);
+        const noviPomoc = new Pomoc({
+            informacije:   req.body.informacije,
+            adresa:        req.body.adresa,
+            broj_telefona: req.body.broj_telefona,
+            ime:           req.body.ime,
+            broj_ljudi:    req.body.broj_ljudi,
+        });
 
-        const noviKorisnik = {
-            idkorisnika: req.body.idkorisnika,
-        }
-
-        Event.ucesnici.push(noviKorisnik);
-
-
-        const provera = await Event.save();
+        const provera = await noviPomoc.save();
         res.json({
             uspesno: true,
             baza: provera,
