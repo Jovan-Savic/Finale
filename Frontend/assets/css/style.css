@@ -2,8 +2,11 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+  font-family:        "Open Sans", sans-serif;
+  color:            #444444;
+  background-image:   "../img/av.jpeg";
+  background-repeat:  no-repeat;
+  background-size:    cover;
 }
 
 a {
@@ -1522,4 +1525,43 @@ section {
   background: #e03a3c;
   color: #fff;
   text-decoration: none;
+}
+.myButton {
+	-moz-box-shadow:inset 0px -3px 7px 0px #ff0000;
+	-webkit-box-shadow:inset 0px -3px 7px 0px #ff0000;
+	box-shadow:inset 0px -3px 7px 0px #ff0000;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff0000), color-stop(1, #fa0808));
+	background:-moz-linear-gradient(top, #ff0000 5%, #fa0808 100%);
+	background:-webkit-linear-gradient(top, #ff0000 5%, #fa0808 100%);
+	background:-o-linear-gradient(top, #ff0000 5%, #fa0808 100%);
+	background:-ms-linear-gradient(top, #ff0000 5%, #fa0808 100%);
+	background:linear-gradient(to bottom, #ff0000 5%, #fa0808 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#fa0808',GradientType=0);
+	background-color:#ff0000;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:5px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fa0808), color-stop(1, #ff0000));
+	background:-moz-linear-gradient(top, #fa0808 5%, #ff0000 100%);
+	background:-webkit-linear-gradient(top, #fa0808 5%, #ff0000 100%);
+	background:-o-linear-gradient(top, #fa0808 5%, #ff0000 100%);
+	background:-ms-linear-gradient(top, #fa0808 5%, #ff0000 100%);
+	background:linear-gradient(to bottom, #fa0808 5%, #ff0000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa0808', endColorstr='#ff0000',GradientType=0);
+	background-color:#fa0808;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }

@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const ConnectDatabase = require("./Database/Database");
-const Dogadjaji =       require("./Database/Dogadjaji");
-const Korisnici =       require("./Database/Korisnici");
+const Stari     =       require("./Database/Stari");
+const Vozac     =       require("./Database/Vozac");
 const Pomoc     =       require("./Database/Pomoc");
 
 const PORT = 3001;
@@ -19,10 +19,10 @@ app.use(express.json());
 
 app.use(express.static("FrontEnd"));
 
-app.get("/use/dogadjaji", async (req, res) => 
+app.get("/use/stari", async (req, res) => 
 {
     try{
-        const CelaTabela = await Dogadjaji.find();
+        const CelaTabela = await Stari.find();
         res.json({
             uspesno: true,
             poruka: CelaTabela,
@@ -35,10 +35,10 @@ app.get("/use/dogadjaji", async (req, res) =>
         });
     }
 })
-app.get("/use/korisnici", async (req, res) => 
+app.get("/use/vozac", async (req, res) => 
 {
     try{
-        const CelaTabela = await Korisnici.find();
+        const CelaTabela = await Vozac.find();
         res.json({
             uspesno: true,
             poruka: CelaTabela,
@@ -67,19 +67,17 @@ app.get("/use/pomoc", async (req, res) =>
         });
     }
 })
-app.post("/use/dogadjaji", async (req, res) => 
+app.post("/use/stari", async (req, res) => 
 {
     try{
-        const noviDogadjaj = new Dogadjaji({
-            ime:         req.body.ime,
-            organizator: req.body.organizator,
-            kontakt:     req.body.kontakt,
-            datum:       req.body.datum,
-            lokacija:    req.body.lokacija,
-            info:        req.body.info,
+        const noviStari = new Stari({
+            ime:            req.body.ime,
+            prezime:        req.body.prezime,
+            broj_telefona:  req.body.broj_telefona,
+            adresa:         req.body.adresa,
         });
 
-        const provera = await noviDogadjaj.save();
+        const provera = await noviStari.save();
         res.json({
             uspesno: true,
             baza: provera,
@@ -92,19 +90,20 @@ app.post("/use/dogadjaji", async (req, res) =>
         });
     }
 })
-app.post("/use/korisnici", async (req, res) => 
+app.post("/use/vozac", async (req, res) => 
 {
     try{
-        const noviKorisnik = new Korisnici({
-            ime:         req.body.ime,
-            prezime:     req.body.prezime,
-            mail:        req.body.mail,
-            password:    req.body.password,
-            organizator: req.body.organizator,
-            odobren:     req.body.odobren,
+        const noviVozac = new Vozac({
+            ime:            req.body.ime,
+            prezime:        req.body.prezime,
+            mail:           req.body.mail,
+            password:       req.body.password,
+            broj_telefona:  req.body.broj_telefona,
+            dostupan:       req.body.dostupan,
+            odobren:        req.body.odobren,
         });
 
-        const provera = await noviKorisnik.save();
+        const provera = await noviVozac.save();
         res.json({
             uspesno: true,
             baza: provera,

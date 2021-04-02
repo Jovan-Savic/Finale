@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const DogadjajSchema = new mongoose.Schema(
+const StariSchema = new mongoose.Schema(
     {
         ime: 
         {
@@ -8,32 +8,22 @@ const DogadjajSchema = new mongoose.Schema(
             trim: true,
             required: true
         },
-        organizator:
+        prezime:
+        {
+            type: String,
+            trim: true,
+            required: true
+        },
+        broj_telefona:
         {
             type: String,
             required: true
         },
-        kontakt: 
+        adresa:
         {
             type: String,
             required: true
         },
-        datum: 
-        {
-            type: Date,
-            required: true
-        },
-        lokacija:
-        {
-            type: String,
-            required: true
-        },
-        info:
-        {
-            type: String,
-            required: true
-        },
-
     });
 
-module.exports = mongoose.model("Dogadjaji", DogadjajSchema);
+module.exports = mongoose.model("Stari", StariSchema);
