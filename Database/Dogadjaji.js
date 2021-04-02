@@ -36,4 +36,4 @@ const DogadjajSchema = new mongoose.Schema(
 
     });
 
-module.exports = mongoose.model("Dogadjaji", DogadjajiSchema);
+module.exports = mongoose.model("Dogadjaji", DogadjajSchema);
