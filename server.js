@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const ConnectDatabase = require("./Database/Database");
 const Dogadjaji =       require("./Database/Dogadjaji");
-const Korisnici =       require("./Database/Korisnici");
+const Vozac =       require("./Database/Vozac");
 const Pomoc     =       require("./Database/Pomoc");
 
 const PORT = 3001;
@@ -35,10 +35,10 @@ app.get("/use/dogadjaji", async (req, res) =>
         });
     }
 })
-app.get("/use/korisnici", async (req, res) => 
+app.get("/use/vozac", async (req, res) => 
 {
     try{
-        const CelaTabela = await Korisnici.find();
+        const CelaTabela = await Vozac.find();
         res.json({
             uspesno: true,
             poruka: CelaTabela,
@@ -92,19 +92,20 @@ app.post("/use/dogadjaji", async (req, res) =>
         });
     }
 })
-app.post("/use/korisnici", async (req, res) => 
+app.post("/use/vozac", async (req, res) => 
 {
     try{
-        const noviKorisnik = new Korisnici({
-            ime:         req.body.ime,
-            prezime:     req.body.prezime,
-            mail:        req.body.mail,
-            password:    req.body.password,
-            organizator: req.body.organizator,
-            odobren:     req.body.odobren,
+        const noviVozac = new Vozac({
+            ime:            req.body.ime,
+            prezime:        req.body.prezime,
+            mail:           req.body.mail,
+            password:       req.body.password,
+            broj_telefona:  req.body.broj_telefona,
+            dostupan:       req.body.dostupan,
+            odobren:        req.body.odobren,
         });
 
-        const provera = await noviKorisnik.save();
+        const provera = await noviVozac.save();
         res.json({
             uspesno: true,
             baza: provera,
