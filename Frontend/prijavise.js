@@ -1,5 +1,6 @@
 window.onload=function(){
 const addButton = document.querySelector(".zasto");
+console.log(addButton);
 addButton.addEventListener("click", GetInputa);
 async function GetInputa()
 {
