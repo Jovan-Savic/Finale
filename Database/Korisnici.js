@@ -31,7 +31,10 @@ const KorisnikSchema = new mongoose.Schema(
             type: Boolean,
             required: true,
         },
-
+        odobren:
+        {
+            type: Boolean,
+        },
     });
 
 module.exports = mongoose.model("Korisnici", KorisnikSchema);
