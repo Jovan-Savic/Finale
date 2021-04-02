@@ -2,8 +2,11 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+  font-family:        "Open Sans", sans-serif;
+  color:            #444444;
+  background-image:   "../img/av.jpeg";
+  background-repeat:  no-repeat;
+  background-size:    cover;
 }
 
 a {
