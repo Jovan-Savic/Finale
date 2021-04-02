@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
 const ConnectDatabase = require("./Database/Database");
-const Dogadjaji =       require("./Database/Dogadjaji");
-const Vozac =       require("./Database/Vozac");
-const Pomoc     =       require("./Database/Pomoc");
+const Stari           = require("./Database/Stari");
+const Vozac           = require("./Database/Vozac");
+const Mesta           = require("./Database/Mesta");
 
 const PORT = 3001;
 
@@ -19,10 +19,10 @@ app.use(express.json());
 
 app.use(express.static("FrontEnd"));
 
-app.get("/use/dogadjaji", async (req, res) => 
+app.get("/use/stari", async (req, res) => 
 {
     try{
-        const CelaTabela = await Dogadjaji.find();
+        const CelaTabela = await Stari.find();
         res.json({
             uspesno: true,
             poruka: CelaTabela,
@@ -51,10 +51,10 @@ app.get("/use/vozac", async (req, res) =>
         });
     }
 })
-app.get("/use/pomoc", async (req, res) => 
+app.get("/use/mesta", async (req, res) => 
 {
     try{
-        const CelaTabela = await Pomoc.find();
+        const CelaTabela = await Mesta.find();
         res.json({
             uspesno: true,
             poruka: CelaTabela,
@@ -67,19 +67,17 @@ app.get("/use/pomoc", async (req, res) =>
         });
     }
 })
-app.post("/use/dogadjaji", async (req, res) => 
+app.post("/use/stari", async (req, res) => 
 {
     try{
-        const noviDogadjaj = new Dogadjaji({
-            ime:         req.body.ime,
-            organizator: req.body.organizator,
-            kontakt:     req.body.kontakt,
-            datum:       req.body.datum,
-            lokacija:    req.body.lokacija,
-            info:        req.body.info,
+        const noviStari = new Stari({
+            ime:            req.body.ime,
+            prezime:        req.body.prezime,
+            broj_telefona:  req.body.broj_telefona,
+            adresa:         req.body.adresa,
         });
 
-        const provera = await noviDogadjaj.save();
+        const provera = await noviStari.save();
         res.json({
             uspesno: true,
             baza: provera,
@@ -119,15 +117,12 @@ app.post("/use/vozac", async (req, res) =>
 
     }
 })
-app.post("/use/pomoc", async (req, res) => 
+app.post("/use/mesta", async (req, res) => 
 {
     try{
-        const noviPomoc = new Pomoc({
-            informacije:   req.body.informacije,
-            adresa:        req.body.adresa,
-            broj_telefona: req.body.broj_telefona,
-            ime:           req.body.ime,
-            broj_ljudi:    req.body.broj_ljudi,
+        const noviMesta = new Mesta({
+            opstina:  req.body.opstina,
+            idvozaca: req.body.idvozaca,
         });
 
         const provera = await noviPomoc.save();

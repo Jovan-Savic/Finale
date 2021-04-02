@@ -1,8 +1,20 @@
 const mongoose = require("mongoose");
 
-const PomocSchema = new mongoose.Schema(
+const StariSchema = new mongoose.Schema(
     {
-        informacije: 
+        ime: 
+        {
+            type: String,
+            trim: true,
+            required: true
+        },
+        prezime:
+        {
+            type: String,
+            trim: true,
+            required: true
+        },
+        broj_telefona:
         {
             type: String,
             required: true
@@ -12,23 +24,6 @@ const PomocSchema = new mongoose.Schema(
             type: String,
             required: true
         },
-        broj_telefona: 
-        {
-            type: String,
-            trim: true,
-            required: true
-        },
-        ime: 
-        {
-            type: String,
-            trim: true,
-            required: true
-        },
-        broj_ljudi:
-        {
-            type: Number,
-            required: true
-        },
     });
 
-module.exports = mongoose.model("Pomoc", PomocSchema);
+module.exports = mongoose.model("Stari", StariSchema);
