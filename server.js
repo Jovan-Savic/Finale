@@ -4,7 +4,7 @@ const ConnectDatabase = require("./Database/Database");
 const Sport = require("./Database/Sport");
 const Korisnici = require("./Database/Korisnici");
 
-const PORT = 3000;
+const PORT = 3001;
 
 
 app.listen(PORT, () =>{

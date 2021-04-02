@@ -6,7 +6,7 @@ async function ConnectDatabase()
     {
         // URL databaze
         const link = 
-        "mongodb+srv://Hakerovi_drugari:Hakerovi_drugari@cluster0.6icaf.mongodb.net/Hakaton?retryWrites=true&w=majority";
+        "mongodb+srv://Hakerovi_drugari:Hakerovi_drugari@cluster0.6icaf.mongodb.net/Databaza?retryWrites=true&w=majority";
     
         // konektovanje
         const connection = await mongoose.connect(link, {
