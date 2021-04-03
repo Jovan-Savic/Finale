@@ -1,6 +1,18 @@
 
 
 
+function beograd(){
+
+    let db = await axios.get("/use/stari");
+    //console.log(db);
+    let korisnici = db.data.poruka;
+
+
+
+
+
+
+}
 
 
 var mymap = L.map('mappa').setView([44.8125, 20.4612], 13);
