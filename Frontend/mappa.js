@@ -1,12 +1,26 @@
 
 
-
-function beograd(){
+function nis(){
 
     let db = await axios.get("/use/stari");
     //console.log(db);
     let korisnici = db.data.poruka;
 
+
+
+
+
+
+}
+
+
+
+async function beograd(){
+
+    let db = await axios.get("/use/stari");
+    //console.log(db);
+    let korisnici = db.data.poruka;
+    console.log(korisnici);
 
 
 
