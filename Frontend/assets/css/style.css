@@ -531,6 +531,8 @@ section {
 }
 
 .clients .swiper-slide img {
+  width: 55%;
+  height:50%;
   opacity: 0.5;
   transition: 0.3s;
   filter: grayscale(100);
