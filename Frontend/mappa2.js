@@ -1,9 +1,12 @@
+window.onload=function(){
+
+    
 
 
 
 
 
-var mymap = L.map('mappa').setView([44.8125, 20.4612], 13);
+var mymap = L.map('mappa').setView([43.3209, 21.8954], 13);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -17,7 +20,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 
 
-
+}
 
 
 
