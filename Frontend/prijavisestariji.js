@@ -76,6 +76,7 @@ window.onload=function(){
           console.log(error);
         });
         localStorage.setItem('user',ime);
+        window.location='home.html';
     //ubacuje se u bazu
     }
     else
