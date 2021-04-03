@@ -30,7 +30,7 @@ window.onload=function(){
     async function GetInputa()
     {
         
-        console.log(marker._latlng);
+        console.log(marker._latlng.lat);
         let ime = document.querySelector(".ime");
         ime=ime.value;
         let a=document.querySelector(".ig");
@@ -58,7 +58,7 @@ window.onload=function(){
     {
         ad.innerHTML="";
     //nisam bas siguran kako hoces da ti dam volonter i korisnik za sad je m da li je volonter i n da li je korisnik oma bool
-        axios.post('/use/stariji', 
+        axios.post('/use/stari', 
         {
             ime:                ime,
             prezime:            pre,

@@ -16,7 +16,6 @@ ConnectDatabase();
 
 app.use(express.json());
 
-
 app.use(express.static("FrontEnd"));
 
 app.get("/use/stari", async (req, res) => 
