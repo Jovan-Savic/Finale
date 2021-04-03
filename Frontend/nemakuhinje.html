@@ -9,14 +9,11 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -25,17 +22,7 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-  crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
-
 </head>
 
 <body>
@@ -48,19 +35,18 @@
         <ul>
           <li><a class="nav-link scrollto " href="home.html">Home</a></li>
           <li><a class="nav-link scrollto " href="onama.html">O nama</a></li>
-          <li><a class="nav-link scrollto" href="blog.html">Gradovi</a></li>
-          <li><a class="nav-link scrollto active" href="login.html">Porudzbine</a></li>
+          <li><a class="nav-link scrollto active" href="blog.html">Gradovi</a></li>
+          <li><a class="nav-link scrollto" href="login.html">Log in</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
 
-      <a href="home.html" id="izlogujbtn" class="get-started-btn scrollto">Izloguj se</a>
+      <a href="register.html" class="get-started-btn scrollto">Register</a>
     </div>
   </header>
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
     <section class="breadcrumbs">
       <div class="container">
 
@@ -71,51 +57,66 @@
         <h2>Gradovi</h2>
 
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section>
 
-    <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-8 entries">
-
-            <article class="entry">
-
-              <div id="mappa"></div>
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row">
+  
+            <div class="col-lg-8 entries">
+  
+              <article class="entry">
+  
+                <div class="entry-img">
+                  <img src="assets/img/blog/glavatinemanja.jpg" alt="" class="img-fluid">
+                </div>
+  
+                <h2 class="entry-title">
+                    Nazalost trenutno nemamo lokaciju u ovom gradu <div style="font-family: Arial, Helvetica, sans-serif;">:(</div>
+                </h2>
+  
+                
+  
+                
+  
+              </article>
+  
             
-            </article><!-- End blog entry -->
-
-          </div><!-- End blog entries list -->
-
-          <div class="col-lg-4">
-
-            <div class="sidebar">
-
-              <h3 class="sidebar-title">Aktivne isporuke:</h3>
-              <div class="sidebar-item categories">
-                <ul>
-                  <li><a href="#">Porudzbina 1 <span>(+)</span></a></li>
-                  <li><a href="#">Porudzbina 2 <span>(+)</span></a></li>
-                  <li><a href="#">Porudzbina 3 <span>(+)</span></a></li>
-                  <li><a href="#">Porudzbina 4 <span>(+)</span></a></li>
-                  <li><a href="#">Porudzbina 5 <span>(+)</span></a></li>
-                  <li><a href="#">Porudzbina 6 <span>(+)</span></a></li>
-                </ul>
-              </div><!-- End sidebar categories-->
-
-
-            </div><!-- End sidebar -->
-
-          </div><!-- End blog sidebar -->
-
+             
+        
+  
+            </div>
+  
+            <div class="col-lg-4">
+  
+              <div class="sidebar">
+  
+                <h3 class="sidebar-title">Volonter sam!</h3>
+                
+                <h3 class="sidebar-title">Gradovi:</h3>
+                <div class="sidebar-item categories">
+                  <ul>
+                    <li><a href="posiljke.html">Beograd <span>(3)</span></a></li>
+                    <li><a href="posiljke.html">Nis <span>(1)</span></a></li>
+                    <li><a href="nemakuhinje.html">Novi Sad <span>(0)</span></a></li>
+                    <li><a href="nemakuhinje.html">Kragujevac <span>(0)</span></a></li>
+                    <li><a href="nemakuhinje.html">Subotica <span>(0)</span></a></li>
+                    <li><a href="nemakuhinje.html">Vranje <span>(0)</span></a></li>
+                  </ul>
+                </div>
+  
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
         </div>
+      </section>
 
-      </div>
-    </section><!-- End Blog Section -->
-
-  </main><!-- End #main -->
+  </main>
 
   <footer id="footer">
 
@@ -180,7 +181,6 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -188,9 +188,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="mappa2.js"></script>
 
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
