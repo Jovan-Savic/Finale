@@ -5,17 +5,18 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Inner Page - Presento Bootstrap Template</title>
+  <title>Gradovi - Human.</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -24,46 +25,93 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-
 </head>
 
 <body>
+
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
       <h1 class="logo me-auto"><a href="home.html">Human<span>.</span></a></h1>
-
+      
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto " href="home.html">Home</a></li>
           <li><a class="nav-link scrollto " href="onama.html">O nama</a></li>
-          <li><a class="nav-link scrollto active" href="posiljke.html">Porudzbine</a></li>
-          <li><a class="nav-link scrollto " href="blog.html">Gradovi</a></li>
+          <li><a class="nav-link scrollto" href="blog.html">Gradovi</a></li>
+          <li><a class="nav-link scrollto active" href="login.html">Porudzbine</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
-      <a href="register.html" class="get-started-btn scrollto">Izloguj se</a>
+
+      <a href="home.html" id="izlogujbtn" class="get-started-btn scrollto">Izloguj se</a>
     </div>
   </header>
+
   <main id="main">
 
+    <!-- ======= Breadcrumbs ======= -->
     <section class="breadcrumbs">
       <div class="container">
 
         <ol>
           <li><a href="home.html">Pocetna</a></li>
-          <li>Posiljke</li>
+          <li>Gradovi</li>
         </ol>
-        <h2>Posiljke</h2>
+        <h2>Gradovi</h2>
 
       </div>
+    </section><!-- End Breadcrumbs -->
 
-    </section>
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
 
-   
+        <div class="row">
 
-  </main>
+          <div class="col-lg-8 entries">
+
+            <article class="entry">
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1415.0763884836022!2d20.47170230061889!3d44.81845212945048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7ab99a4a28b7%3A0xdcd5198209ff7ffb!2z0JHRg9C00LjQvNGB0LrQsCwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1617446496420!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              
+
+            
+            </article><!-- End blog entry -->
+
+          </div><!-- End blog entries list -->
+
+          <div class="col-lg-4">
+
+            <div class="sidebar">
+
+              <h3 class="sidebar-title">Volonter sam!</h3>
+              
+              <h3 class="sidebar-title">Gradovi:</h3>
+              <div class="sidebar-item categories">
+                <ul>
+                  <li><a href="#">Beograd <span>(3)</span></a></li>
+                  <li><a href="#">Nis <span>(1)</span></a></li>
+                  <li><a href="#">Novi Sad <span>(0)</span></a></li>
+                  <li><a href="#">Kragujevac <span>(0)</span></a></li>
+                  <li><a href="#">Subotica <span>(0)</span></a></li>
+                  <li><a href="#">Vranje <span>(0)</span></a></li>
+                </ul>
+              </div><!-- End sidebar categories-->
+
+
+            </div><!-- End sidebar -->
+
+          </div><!-- End blog sidebar -->
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Section -->
+
+  </main><!-- End #main -->
+
   <footer id="footer">
 
     <div class="footer-top">
@@ -86,53 +134,49 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="home.html">Pocetna</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="onama.html">Doniraj</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="blog.html">O nama</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="blog.html">Gradovi</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="terms.txt">Terms of service</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">
-            <h4>Ako nije rano, pozajmite negdje u komšiluku kavu, šećer i neku cigaretu. Sjedite, smirite se i
-              razmislite - kod koga biste danas mogli ručati. Ako vam djeca kažu da su gladna, recite im da bi bilo
-              bolje da uče. Ispričajte im ponovo kako ste se vi mučili dok niste stigli dotle da pozajmljujete tek 28. u
-              mjesecu.
+            <h4>Ako nije rano, pozajmite negdje u komšiluku kavu, šećer i neku cigaretu. Sjedite, smirite se i razmislite - kod koga biste danas mogli ručati. Ako vam djeca kažu da su gladna, recite im da bi bilo bolje da uče. Ispričajte im ponovo kako ste se vi mučili dok niste stigli dotle da pozajmljujete tek 28. u mjesecu.
             </h4>
-            <p>Dusko Radovic</p>
+           <p>Dusko Radovic</p>
           </div>
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Svijet je opasno mjesto za život, ne zbog ljudi koji su zli, već zbog dobrih ljudi koji ništa ne
-              poduzimaju.</h4>
-            <p>Albert Ajnstajn</p>
+            <h4>Svijet je opasno mjesto za život, ne zbog ljudi koji su zli, već zbog dobrih ljudi koji ništa ne poduzimaju.</h4>
+           <p>Albert Ajnstajn</p>
           </div>
 
+        </div>
+      </div>
+    </div>
 
-          <div class="container d-md-flex py-4">
+    <div class="container d-md-flex py-4">
 
-            <div class="me-md-auto text-center text-md-start">
-              <div class="copyright">
-                &copy; Copyright <strong><span>Hakerovi drugari</span></strong>. All Rights Reserved
-              </div>
-              <div class="credits">
-                Designed by <a>Hakerovi drugari united</a>
-              </div>
-            </div>
-            <div class="social-links text-center text-md-end pt-3 pt-md-0">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Hakerovi drugari</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a>Hakerovi drugari united</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
   </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="prijavise.js"></script>
-
-  <!-- <script src="assets/vendor/aos/aos.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
@@ -140,8 +184,8 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-
-  <script src="assets/js/main.js"></script>-->
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
