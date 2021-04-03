@@ -121,7 +121,7 @@ app.post("/use/mesta", async (req, res) =>
 {
     try{
         const noviMesta = new Mesta({
-            opstina:  req.body.opstina,
+            naziv_grada:  req.body.naziv_grada,
             idvozaca: req.body.idvozaca,
         });
 
