@@ -38,6 +38,8 @@ if(pass.length>8)
 if(passre==pass)
 {
 k.innerHTML="";
+if(bro.length>9)
+{t.innerHTML="";
 axios.post('/use/vozac', 
     {
         ime:            ime,
@@ -54,6 +56,10 @@ axios.post('/use/vozac',
     .catch(function (error) {
       console.log(error);
 })
+}
+else{
+    t.innerHTML="los broj";
+}
 }
 else{
     k.innerHTML="nije ista sifra";
