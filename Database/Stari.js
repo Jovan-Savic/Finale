@@ -34,6 +34,14 @@ const StariSchema = new mongoose.Schema(
             type: String,
             required: true
         },
+        dostavljam: 
+        {
+            type: Boolean
+        },
+        isporuceno:
+        {
+            type: Boolean
+        }
     });
 
 module.exports = mongoose.model("Stari", StariSchema);
