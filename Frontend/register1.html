@@ -26,7 +26,12 @@
 
   <link href="assets/css/style.css" rel="stylesheet">
 
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
 </head>
 
 <body>
@@ -97,8 +102,8 @@
       <label for="br"><b>Broj telefona</b></label>
       <input type="text" placeholder="601 1234 678" name="br" id="br" class="bro" required>
       <div class="mg"></div>
-      <label for="adresa"><b>Adresa</b></label>
-      <input type="text" placeholder="Husinskih rudara 5" name="adresa" id="adresa" class="adresa" required>
+
+          <div id="mapid"></div>
    
      
       <a href="register.html" class="s">Vozac</a>

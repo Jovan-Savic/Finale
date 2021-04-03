@@ -1648,3 +1648,14 @@ a {
 .s:hover, s.active {
   background-color: #e03a3c;
 }
+#mappa{
+
+  height: 700px;
+
+
+}
+#mapid { 
+
+  height: 280px; 
+}
+
