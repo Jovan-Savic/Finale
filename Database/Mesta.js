@@ -2,9 +2,10 @@ const mongoose = require("mongoose");
 
 const MestaSchema = new mongoose.Schema(
     {
-        opstina:
+        naziv_grada:
         {
             type: String,
+            trim: true,
             required: true
         },
         broj_telefona: 
@@ -13,7 +14,11 @@ const MestaSchema = new mongoose.Schema(
             trim: true,
             required: true
         },
-        idvozaca: 
+        idvozaca:
+        {
+            type: [String]
+        },
+        idkorisnika:
         {
             type: [String]
         },
