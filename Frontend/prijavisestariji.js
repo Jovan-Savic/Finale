@@ -41,9 +41,11 @@ window.onload=function(){
         t=document.querySelector(".bg");
     bro=bro.value;
     let adre = document.querySelector(".adr");
+    
+    console.log(adre);
         ad=document.querySelector(".na");
     adre=adre.value;
-    console.log(bro);
+    console.log(adre);
     if(ime.length>2)
     {
         a.innerHTML="";
@@ -56,13 +58,16 @@ window.onload=function(){
     {
         ad.innerHTML="";
     //nisam bas siguran kako hoces da ti dam volonter i korisnik za sad je m da li je volonter i n da li je korisnik oma bool
-        axios.post('/api/korisnici', 
+        axios.post('/use/stariji', 
         {
-            ime: imee,
-            prezime: pree,
-            mail: emel,
-            password: pass,
-            organizator: orga
+            ime:                ime,
+            prezime:            pre,
+            broj_telefona:      bro,
+            geografska_sirina:  marker._latlng.lat,
+            geografska_visina:  marker._latlng.lng,
+            adresa:             adre,
+            dostavljam:         false,
+            isporuceno:         false
         })
         .then(function (response) {
           console.log(response);
