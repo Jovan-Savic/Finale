@@ -75,6 +75,7 @@ window.onload=function(){
         .catch(function (error) {
           console.log(error);
         });
+        localStorage.setItem('user',ime);
     //ubacuje se u bazu
     }
     else

@@ -54,6 +54,7 @@ axios.post('/use/vozac',
     .catch(function (error) {
       console.log(error);
 })
+localStorage.setItem('user',ime);
 }
 else{
     k.innerHTML="nije ista sifra";
