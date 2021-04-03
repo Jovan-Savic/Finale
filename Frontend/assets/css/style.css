@@ -1645,6 +1645,6 @@ a {
   display: inline-block;
 }
 
-.s:hover, .active {
+.s:hover, s.active {
   background-color: #e03a3c;
 }
