@@ -28,7 +28,7 @@ window.onload=function(){
         {
            localStorage.setItem('user',ime);
             console.log("uspeo sam");
-            window.location='home.html';
+            window.location.replace("home.html");
         }
     }
 }

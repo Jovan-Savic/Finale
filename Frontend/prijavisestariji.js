@@ -72,7 +72,7 @@ window.onload = function () {
                             .catch(function (error) {
                                 console.log(error);
                             });
-                            window.location='home.html';
+                            window.location.replace("home.html");
                         //ubacuje se u bazu
                     }
                     else {
