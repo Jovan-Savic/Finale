@@ -38,7 +38,7 @@ if(pass.length>8)
 if(passre==pass)
 {
 k.innerHTML="";
-if(bro.length>9)
+if(bro.length>7)
 {t.innerHTML="";
 axios.post('/use/vozac', 
     {
