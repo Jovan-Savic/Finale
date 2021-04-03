@@ -1636,3 +1636,15 @@ a {
   background-color: #f1f1f1;
   text-align: center;
 }
+.s:link, .s:visited {
+  background-color: black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.s:hover, .active {
+  background-color: #e03a3c;
+}
