@@ -1596,7 +1596,7 @@ hr {
 }
 
 /* Set a style for the submit/register button */
-.registerbtn {
+.zasto {
   background-color: #e03a3c;
   color: white;
   padding: 16px 20px;
@@ -1607,7 +1607,22 @@ hr {
   opacity: 0.9;
 }
 
-.registerbtn:hover {
+.zasto:hover {
+  opacity:1;
+}
+
+.plzhelp {
+  background-color: #e03a3c;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.plzhelp:hover {
   opacity:1;
 }
 
