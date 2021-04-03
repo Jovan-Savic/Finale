@@ -19,6 +19,7 @@ const StariSchema = new mongoose.Schema(
             type: String,
             required: true
         },
+        
         adresa:
         {
             type: String,

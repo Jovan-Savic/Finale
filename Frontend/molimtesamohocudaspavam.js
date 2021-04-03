@@ -4,6 +4,9 @@ window.onload=function(){
     addButton.addEventListener("click", GetInputa);
     async function GetInputa()
     {
+        let db = await axios.get("/use/stari");
+        //console.log(db);
+        let korisnici = db.data.poruka;
         let mei=document.querySelector(".meil");
         mei=mei.Value;
         let sif=document.querySelector(".bol");
