@@ -22,13 +22,7 @@ async function GetInputa()
     let bro = document.querySelector(".bro");
     t=document.querySelector(".bg");
 bro=bro.value;
-let m=document.getElementById("exampleRadios1");
-let n=document.getElementById("exampleRadios2");
-console.log(m.checked);
-console.log(n.checked);
-console.log("dad");
-m=m.checked;
-n=n.checked;
+
 if(ime.length>2)
 {
     a.innerHTML="";
