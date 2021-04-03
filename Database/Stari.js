@@ -19,7 +19,16 @@ const StariSchema = new mongoose.Schema(
             type: String,
             required: true
         },
-        
+        geografska_sirina:
+        {
+            type: Number,
+            required: true
+        },
+        geografska_visina:
+        {
+            type: Number,
+            required: true
+        },
         adresa:
         {
             type: String,
