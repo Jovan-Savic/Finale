@@ -78,11 +78,11 @@ window.onload=function(){
         zoomOffset: -1,
         accessToken: 'sk.eyJ1Ijoic3RlZmFuOTgiLCJhIjoiY2tuMWx6ZDR2MHhibDJvcGNxdnp3aHpzciJ9.Wp5qun3mr4nMQoWo4AQEyw'
     }).addTo(mymap);
-
+    
     var marker = null;
-
+    
     function onMapClick(e) {
-
+    
         if (marker == null) {
             marker = L.marker(e.latlng).addTo(mymap);
         }
@@ -90,7 +90,6 @@ window.onload=function(){
             mymap.removeLayer(marker)
             marker = L.marker(e.latlng).addTo(mymap);
         }
-
-    }
-mymap.on('click', onMapClick);
     
+    }
+    mymap.on('click', onMapClick);
