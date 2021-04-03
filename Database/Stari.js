@@ -19,12 +19,29 @@ const StariSchema = new mongoose.Schema(
             type: String,
             required: true
         },
-        
+        geografska_sirina:
+        {
+            type: Number,
+            required: true
+        },
+        geografska_visina:
+        {
+            type: Number,
+            required: true
+        },
         adresa:
         {
             type: String,
             required: true
         },
+        dostavljam: 
+        {
+            type: Boolean
+        },
+        isporuceno:
+        {
+            type: Boolean
+        }
     });
 
 module.exports = mongoose.model("Stari", StariSchema);

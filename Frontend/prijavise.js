@@ -38,7 +38,22 @@ if(pass.length>8)
 if(passre==pass)
 {
 k.innerHTML="";
-//axios
+axios.post('/use/vozac', 
+    {
+        ime:            ime,
+        prezime:        pre,
+        mail:           emel,
+        password:       pass,
+        broj_telefona:  bro,
+        dostupan:       false,
+        odobren:        false,
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+})
 }
 else{
     k.innerHTML="nije ista sifra";

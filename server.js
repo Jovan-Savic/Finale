@@ -71,10 +71,14 @@ app.post("/use/stari", async (req, res) =>
 {
     try{
         const noviStari = new Stari({
-            ime:            req.body.ime,
-            prezime:        req.body.prezime,
-            broj_telefona:  req.body.broj_telefona,
-            adresa:         req.body.adresa,
+            ime:                req.body.ime,
+            prezime:            req.body.prezime,
+            broj_telefona:      req.body.broj_telefona,
+            geografska_sirina:  req.body.geografska_sirina,
+            geografska_visina:  req.body.geografska_visina,
+            adresa:             req.body.adresa,
+            dostavljam:         req.body.dostavljam,
+            isporuceno:         req.body.isporuceno
         });
 
         const provera = await noviStari.save();
