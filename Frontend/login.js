@@ -19,13 +19,14 @@ window.onload=function(){
             {
                 if(korisnik.password==sif)
                 {
+                    let ime=korisnik.ime;
                     k=1;
                 }
             }
         });
         if(k==1)
         {
-            //registrovao sam se
+           localStorage.setItem('user',ime);
             console.log("uspeo sam");
         }
     }
