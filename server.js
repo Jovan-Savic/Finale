@@ -1,12 +1,13 @@
 const express = require("express");
 const app = express();
+var cors = require("cors");
 const ConnectDatabase = require("./Database/Database");
 const Stari           = require("./Database/Stari");
 const Vozac           = require("./Database/Vozac");
 const Mesta           = require("./Database/Mesta");
 
 const PORT = 3001;
-
+app.use(cors);
 
 app.listen(PORT, () =>{
 console.log("pocelo");
